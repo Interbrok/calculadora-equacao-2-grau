@@ -1,0 +1,96 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-1);
+  margin: 0px;
+}
+
+:root {
+  --primary-1: rgb(29, 32, 38);
+  --primary-2: rgb(57, 64, 77);
+  --tertiary-1: rgb(204, 153, 0);
+  --title: rgb(255, 255, 255);
+  --body: rgb(230, 230, 230);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-2);
+  height: 10vh;
+}
+
+header a {
+  background-color: inherit;
+  padding-left: 10px;
+}
+
+header svg {
+  background-color: inherit;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 426px;
+  height: 526px;
+  padding: 15px 15px;
+  background-color: var(--primary-2);
+  color: var(--title);
+  text-align: justify;
+  border-radius: 10px;
+}
+
+.card h1 {
+  background-color: inherit;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  background-color: inherit;
+  margin-bottom: 15px;
+  color: var(--body);
+}
+
+.card a {
+  background-color: inherit;
+  color: var(--tertiary-1);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 948px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 32px;
+    gap: 32px;
+  }
+
+  .card {
+    width: 296px;
+    height: fit-content;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header a {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  header svg {
+    height: 40px;
+    width: fit-content;
+  }
+}
+
